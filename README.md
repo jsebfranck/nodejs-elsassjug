@@ -19,19 +19,19 @@ Nous réutiliserons les commandes node, npm, grunt et bower dans les étapes sui
 
 ### Etape 1 : Hello world ![Easy](icons/dojo-difficulty-easy.png)
 
-Créez un fichier hello.js qui affiche "hello world" dans la console puis exécutez ce fichier avec la commande node.
+En utilisant votre éditeur préféré (par exemple SublimeText), créez un fichier hello.js qui affiche "hello world" dans la console puis exécutez ce fichier avec la commande node.
 
-Félicitations, vous faites du Node.js ;-)
+Félicitations, vous venez d'exécuter du code Node.js ;-)
 
 ### Etape 2 : Votre premier projet ![Easy](icons/dojo-difficulty-easy.png)
 
 Lancez la commande "npm init" et suivez les différentes étapes de création du projet.
 
-Féliciations vous venez de créer votre premier projet Node.js. Jetez un coup d'oeil au fichier package.json qui vient d'être généré. Ce fichier permet de décrire votre projet et de préciser quelles dépendances votre projet utilise.
+Vous venez de créer votre premier projet Node.js. Jetez un coup d'oeil au fichier package.json qui vient d'être généré. Ce fichier permet de décrire votre projet et ses différentes dépendances.
 
 ### Etape 3 : Votre premier serveur HTTP ![Intermediate](icons/dojo-difficulty-intermediate.png)
 
-[Express](https://github.com/strongloop/express) est un module qui permet de créer un serveur web en Node.js.
+[Express](https://github.com/strongloop/express) est un module qui permet de créer un serveur web en Node.js. C'est une surcouche au module http qui est compris de base dans Node.js.
 
 En une seule commande npm, installez ce module dans votre projet et faites en sorte que le module soit automatiquement référencé dans le fichier package.json.
 Jetez à présent un coup d'oeil au contenu de votre projet, un nouveau répertoire vient d'être créé. Jetez y un coup d'oeil.
@@ -79,7 +79,7 @@ Faites en sorte de pouvoir ajouter un animal de la manière suivante :
 $ curl -H "Content-Type: application/json" -X POST http://localhost:3000/pet -d '{"name": "Rockie", "age": "4"}'
 ```
 
-Pour l'instant on se contentera d'afficher les informations du body dans la console du serveur. La difficulté ici est de parser le contenu du body. Pour faire cela, vous allez devoir installer un autre module...
+Pour l'instant on se contentera d'afficher le contenu de la requête dans la console du serveur. La difficulté ici est de parser le body de la requête. Pour faire cela, vous allez devoir installer un autre module...
 
 ### Etape 6 : Intégration d'un backend ![Intermediate](icons/dojo-difficulty-intermediate.png)
 
@@ -92,6 +92,8 @@ Pour commencer, créez-vous un compte sur Firebase. C'est gratuit et vous ne le 
 Ensuite, installez le module [Node.js](https://www.firebase.com/docs/web/quickstart.html) dans le projet.
 
 Utilisez à présent les fonctions d'écriture et de lecture du module Firebase pour créer et lister des animaux, en remplacant le code des requêtes GET /pets et POST /pet.
+
+Testez ensuite vos deux requêtes HTTP et visualisez vos données sur votre compte Firebase.
 
 ### Etape 7 : Un peu d'HTML ![Intermediate](icons/dojo-difficulty-intermediate.png)
 
