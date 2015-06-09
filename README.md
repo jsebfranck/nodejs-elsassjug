@@ -65,6 +65,12 @@ module.exports = function(grunt) {
 };
 ```
 
+Installez le packet grunt en local en exécutant dans votre racine de projet:
+
+```
+npm install grunt --save
+```
+
 Désormais, vous pouvez lancer la commande grunt pour démarrer votre serveur et toute modification du code sera prise immédiatement en compte.
 
 Une alternative à grunt est gulp. Grunt ou Gulp permettent de gérer toutes les tâches autour de votre projet : exécution des tests, build, minification, gestion des feuilles de style etc.
