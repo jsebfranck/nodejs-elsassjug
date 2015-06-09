@@ -69,6 +69,7 @@ Installez le packet grunt en local en exécutant dans votre racine de projet:
 
 ```
 npm install grunt --save
+npm install grunt-nodemon --save
 ```
 
 Désormais, vous pouvez lancer la commande grunt pour démarrer votre serveur et toute modification du code sera prise immédiatement en compte.
